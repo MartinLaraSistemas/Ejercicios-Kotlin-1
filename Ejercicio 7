@@ -1,0 +1,11 @@
+fun main(args: Array<String>) {
+    val ordenarPalabras = arrayOf("Ejercicio","Numero","siete","kotlin")
+
+    ordenarPalabras.sortBy{it.length}
+
+    println("Las palabras ordenadas son: ")
+
+    for(cadena in ordenarPalabras){
+        println(cadena)
+    }
+}

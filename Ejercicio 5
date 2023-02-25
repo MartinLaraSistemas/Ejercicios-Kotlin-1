@@ -1,0 +1,21 @@
+fun main(args: Array<String>) {
+    println("Dime el valor del primer lado")
+    val l1= readln()
+    println("Dime el valor del segundo lado")
+    val l2=readln()
+    println("Dime el valor del tercer lado")
+    val l3= readln()
+
+    if(l1==l2 && l2==l3 && l1==l3){
+        println("Triangulo equilatero")
+    }else{
+        if(l1==l2 || l2==l3 || l3==l1){
+            println("Triangulo isósceles")
+        }
+        else{
+            if(l1 != l2 && l2 != l3 && l3 != l1){
+                println("Triángulo escaleno")
+            }
+        }
+    }
+}

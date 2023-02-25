@@ -1,0 +1,21 @@
+fun main(args: Array<String>) {
+    print("Por favor digite un numero entre 1 y 9999")
+    val numero= readln().toIntOrNull()
+
+    if (numero == null || numero < 1 || numero > 9999){
+        println("El numero excede el limite")
+    }
+    else{
+        val unidadesMillar = numero / 1000
+        val unidadesCentena = (numero % 1000) / 100
+        val unidadesDecena = (numero % 100) / 10
+        val unidadesUnidad = numero % 10
+
+        println("El numero tiene $unidadesMillar unidades de millar")
+        println("El numero tiene $unidadesCentena unidades de centenas")
+        println("El numero tiene $unidadesDecena unidades de decenas")
+        println("El numero tiene $unidadesUnidad unidades de unidades")
+
+    }
+
+}

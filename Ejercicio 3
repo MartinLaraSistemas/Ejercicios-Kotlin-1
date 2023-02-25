@@ -1,0 +1,17 @@
+fun main(args: Array<String>) {
+    print("Ingrese un número")
+    val decimal= readln()
+
+    if(decimal == null){
+        println("Debes ingresar un número")
+    }
+    else{
+        val binario=decimal.toInt().toString(2)
+        val octal=decimal.toInt().toString(8)
+        val hexadecimal=decimal.toInt().toString(16)
+
+        println("Equivalente a binario: $binario")
+        println("Equivalente a octal: $octal")
+        println("Equivalente a hexadecimal: $hexadecimal")
+    }
+}

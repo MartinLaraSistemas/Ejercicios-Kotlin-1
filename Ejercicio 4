@@ -1,0 +1,20 @@
+fun main(args: Array<String>) {
+
+    print("Ingrese una cadena: ")
+    val cadena = readLine()
+
+
+    if (cadena == null || cadena.isEmpty()) {
+        println("Cadena inválida")
+    } else {
+
+        val reversa = cadena.reversed()
+        val esPalindromo = cadena == reversa
+
+        if (esPalindromo) {
+            println("La cadena es palíndromo")
+        } else {
+            println("La cadena no es palíndromo")
+        }
+    }
+}
